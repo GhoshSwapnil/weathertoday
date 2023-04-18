@@ -1,0 +1,1 @@
+document.getElementById("boxx").style.display="none";

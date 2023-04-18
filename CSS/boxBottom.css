@@ -1,0 +1,66 @@
+#upComing{
+    width: 78vw;
+    height: 33vh;
+
+    position: absolute;
+
+    bottom: 1vh;
+    left: 1vw;
+
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+
+    flex-direction:row;;
+
+    gap: 2vw;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.card img{
+    /* height:10vh;
+    width:90%; */
+    height:10vh;
+    width:90%;
+    object-fit:fill;
+}
+
+.card{
+    width: 25vw; 
+    height: 30vh;
+    background: linear-gradient(to top,rgb(228 33 33 / 32%), #7d41ffd2);
+    
+    border: 2px rgb(110 94 94) solid;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+
+    box-shadow: inset 1px -1px 7px 2px rgb(255 255 255);
+    overflow: hidden;
+}
+.moodC{
+    color: #ffe7e7;
+}
+.dataN{
+    height: 20vh;
+}
+.geek{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.day{
+    display: inline-block;
+    border:.1vh solid white;
+    border-radius: 20%;
+    padding: .5vw;
+    margin-top: 1vh;
+    background-color: aliceblue;
+    font-size: large;
+}
+/* .card:hover{
+    transform: scale(1.01);
+} */

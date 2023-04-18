@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital@1&family=Signika&family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <title>Weather App</title>
+    <style>
+        *{
+             box-sizing: border-box;
+             padding: 0;
+             margin: 0;
+             font-family:  'Signika', sans-serif;
+        }
+         .main{
+             position: relative;
+             background: url('Image/nightBackg.jpg') no-repeat center;
+             background-size: cover;
+             height: 100vh;
+             width: 100vw;
+             display: flex;
+             justify-content: flex-start;
+             align-items: center;
+             flex-direction: column;
+             font-size: large;
+         }
+    </style>
+    
+     <link rel="stylesheet" href="CSS/backg.css">
+     <link rel="stylesheet" href="CSS/box.css">
+     <link rel="stylesheet" href="CSS/boxLeft.css">
+     <link rel="stylesheet" href="CSS/boxCenter.css">
+     <link rel="stylesheet" href="CSS/boxBottom.css">
+     <link rel="stylesheet" href="CSS/inputLoc.css">
+     <link rel="stylesheet" href="CSS/responsiveMob.css">
+</head>
+<body>
+    <div class="main">
+        <div class="inputStyle">
+            <img id= "srchIMG" src="Image/search.png" height="30vh" width="30vw" onclick="fetchLocLat(`from click`);" >
+            <img id="gprs" src="https://img.icons8.com/office/80/000000/near-me.png" height="30vh" width="30vw" onclick="getLocation()" style="color: white;">
+            <input id="loc" type="text" placeholder="Location...">
+        </div>
+
+        <div class="cloudA">
+            <img class="cloud1"  src="Image/cloud.png">
+            <img class="cloud2"  src="Image/cloud.png">
+            <img class="cloud3"  src="Image/cloud.png">
+            <img class="cloud4"  src="Image/cloud.png">
+            <img class="cloud5"  src="Image/cloud.png">
+            <img class="cloud6"  src="Image/cloud.png">
+            <img class="cloud7"  src="Image/cloud.png">
+            <img class="cloud8"  src="Image/cloud.png">
+            <img class="cloud9"  src="Image/cloud.png">
+            <img class="cloud10" src="Image/cloud.png">
+        </div>
+        <div id="boxx">
+
+            <span id="ribon"></span>
+
+            <p id="currLoc" style="text-align:center; margin-top: 2vh; font-size: x-large;"></p>
+
+            <div class="top">
+                <div class="middle">
+                    <div class="ifo">
+                        <img id="weather" src="">
+                    </div>
+                    <div class="tempIfo">
+                        <div id="tempDisp"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p id="mood" style="padding-bottom:.1vh;"></p>
+            <div class="center">
+                    <div  class="currC">
+                         <img src="Image/minTemp.png" height="30vh" width="40vw">
+                         <span id="Cmin"></span>
+                    </div>
+
+                    <div class="currC">
+                         <img src="Image/maxTemp.png" height="30vh" width="40vw">
+                         <span id="Cmax"></span>
+                    </div>
+
+                    <div class="currC">
+                         <img src="Image/humidity.png" height="30vh" width="40vw">
+                         <span id="Chum"></span>
+                    </div>
+
+                    <div class="currC">
+                         <img src="Image/uv.png" height="30vh" width="40vw">
+                         <span id="Cpres"></span>
+                    </div>
+                    <!-- <div class="currC">
+                        <img src="Image/virus.png" height="30vh" width="40vw">
+                        <span id="Cpres">3.5k</span>
+                   </div> -->
+            </div>
+
+            <div id="upComing" class="upcomingDays">
+            </div>
+        </div>
+    </div>
+     <script src="JavaScript/load.js"></script>
+     <script src="JavaScript/geoLocation.js"></script>
+     <script src="JavaScript/fetchLonLat.js"></script>
+     <script src="JavaScript/mainLeader.js"></script>
+     <script src="JavaScript/annimationStartStop.js"></script>
+     <script src="JavaScript/mobileLandResp.js"></script>
+</body>
+</html>
